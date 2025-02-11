@@ -14,6 +14,7 @@ import { useAuth } from "@/hooks/useAuth";
 
 interface User {
   name: string;
+  nickname: string;
   email: string;
   amount: number;
   id: number,
@@ -55,6 +56,7 @@ function Profile() {
       if(!user?.id) return;
       const editUser = {
         name: name || "" || user.name,
+        nickname: nick || "" || user.nickname,
         email: email || "" || user.email,
         amount: user?.amount || 0,
         id: user?.id,
@@ -124,7 +126,7 @@ function Profile() {
                         Prêmio Total
                       </h1>
                       <span className="text-5xl">
-                        $ {user.amount.toLocaleString()}
+                        $ {user.amount}
                       </span>
                     </div>
                     <section className="flex w-full justify-between mt-4 text-5xl">

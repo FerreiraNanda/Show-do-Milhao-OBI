@@ -2,13 +2,11 @@
 
 import axios from "axios";
 import { useEffect, useState } from "react"
-import { FaRegEye } from "react-icons/fa";
-import Image from "next/image";
-import logoObi from '../../../public/logoOBI.svg'
 import { useRouter } from "next/navigation"
 
 export default function Register() {
     const [name, setName] = useState("");
+    const [nickname, setNickname] = useState("")
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [aux, setAux] = useState("");
@@ -22,9 +20,9 @@ export default function Register() {
         try {
             const res = await axios.post('http://localhost:5107/api/Users/Register', {
                 name,
+                nickname,
                 email,
                 password,
-                amount
             });
         } catch (error) {
             console.log(error);
@@ -46,9 +44,8 @@ export default function Register() {
 
     return (
         <main className="h-full items-center justify-center flex flex-row bg-gray-200">
-            <div className="w-1/2 h-screen bg-[#2263a3] min-w-52">
-                <Image src={logoObi} alt="Logo da OBI" quality={100} priority
-                    className="scale-75" />
+            <div className="w-1/2 h-screen bg-[#2263a3] min-w-52 items-center justify-center">
+                <img src="/logoObi.svg" alt="Logo da OBI" className="scale-75" />
             </div>
             <div className="w-1/2 flex flex-col justify-center items-center bg-gray-200">
                 <h1 className="text-[#2263a3] text-4xl font-jost mb-4 font-bold">Cadastrar</h1>
@@ -58,6 +55,11 @@ export default function Register() {
                             Nome Completo
                         </label>
                         <input type="text" value={name} onChange={(e) => setName(e.target.value)} required
+                            className="py-2 px-3 mb-3 rounded-lg border-[1.5px] border-[#2263a3] hover:outline-[#2263a3] hover:outline-4 box-border" />
+                        <label className="text-sm">
+                            Nickname
+                        </label>
+                        <input type="text" value={nickname} onChange={(e) => setNickname(e.target.value)} required
                             className="py-2 px-3 mb-3 rounded-lg border-[1.5px] border-[#2263a3] hover:outline-[#2263a3] hover:outline-4 box-border" />
                         <label className="text-sm">E-mail</label>
                         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required

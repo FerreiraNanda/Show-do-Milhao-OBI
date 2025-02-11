@@ -5,10 +5,12 @@ import stop from '../../../public/stop.svg';
 import { useState } from 'react';
 import { IoMdClose } from "react-icons/io";
 import { FaCheck } from "react-icons/fa6";
+import { useRouter } from 'next/navigation';
 
 export default function Stop({ endGame }: { endGame: (msg: boolean) => void }) {
     const [isDisabled, setIsDisabled] = useState(false);
     const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
+    const router = useRouter();
 
     function handleClick() {
         setIsConfirmModalOpen(true);
@@ -17,6 +19,7 @@ export default function Stop({ endGame }: { endGame: (msg: boolean) => void }) {
     function confirmStop() {
         setIsDisabled(true);
         endGame(true);
+        router.push("/");
         setIsConfirmModalOpen(false);
     }
 

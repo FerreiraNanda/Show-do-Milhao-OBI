@@ -1,6 +1,6 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Container } from "@/components/container";
@@ -12,6 +12,14 @@ import { withAuth } from "@/hooks/withAuth";
 import { HeaderAux } from "@/components/header/header";
 import { Footer } from "@/components/footer";
 
+interface User {
+    name: string;
+    nickname: string,
+    email: string;
+    amount: number;
+    id: number,
+    createdOn: string,
+  }
 function Game() {
     const searchParams = useSearchParams();
     const level = searchParams.get("level") || "";
@@ -30,10 +38,18 @@ function Game() {
     const [budget, setBudget] = useState(0);
     const [endGame, setEndGame] = useState(false);
     const [isMoHelp, setIsHelp] = useState(false);
+    const [user, setUser] = useState<User | null>(null);
 
     const [usedStop, setUsedStop] = useState(false);
 
     const values = ["1000", "5000", "50000", "100000", "300000", "500000", "1000000"]
+
+    useEffect(()=>{
+        const storedUser = localStorage.getItem("user");
+        if(storedUser){
+            setUser(JSON.parse(storedUser));
+        }
+    }, [])
 
     useEffect(() => {
         const fetchQuestions = async () => {
@@ -49,11 +65,11 @@ function Game() {
         };
 
         fetchQuestions();
-    }, [level, type]);
+    }, []);
 
     useEffect(() => {
-        if (currentStep > 0) {
-            setBudget(parseInt(values[currentStep - 1], 10));
+        if (currentStep >= 0) {
+            setBudget(parseInt(values[currentStep-1], 10));
         }
     }, [currentStep]);
 
@@ -62,8 +78,16 @@ function Game() {
         setIsModalOpen(true);
     };
 
+    const handleBudget = async () =>{
+        try{
+            await axios.post(`http://localhost:5107/api/Users/${user?.id}/${budget}`)
+        }catch(error){
+            console.log(error);
+        }
+    }
+ 
     function end(){
-        console.log("stop usado")
+        handleBudget();
     }
 
     function help(){

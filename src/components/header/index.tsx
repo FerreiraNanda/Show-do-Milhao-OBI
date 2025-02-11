@@ -20,7 +20,7 @@ export function Header() {
                 <nav className="flex justify-center items-center gap-8 mr-40">
                     <div className="flex items-center gap-2 hover:text-amber-300 transition duration-300">
                         <Link href="/">
-                            <span className="font-bold ">
+                            <span className="font-semibold ">
                                 Jogar
                             </span>
                         </Link>

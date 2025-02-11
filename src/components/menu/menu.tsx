@@ -37,7 +37,7 @@ export default function ProfileMenu() {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
         sx={{textTransform:"none", color: "inherit"}}
-        className='text-white gap-2 hover:text-amber-300 transition duration-300'
+        className='text-white gap-2 hover:text-amber-300 transition duration-300 text-lg'
       >
         <FaRegUser size={25}/><IoIosArrowDown size={25} /> 
       </Button>

@@ -1,3 +1,5 @@
+"use client"
+
 import { IoMdPlay } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
@@ -18,7 +20,6 @@ export default function Ranking({ level, type }: StartGameProps) {
   const router = useRouter();
   const [ranking, setRanking] = useState<RankingItem[]>([]);
 
-  // Recuperando o usuário do localStorage
   const [userId, setUserId] = useState<string | null>(null);
 
   useEffect(() => {
@@ -26,11 +27,10 @@ export default function Ranking({ level, type }: StartGameProps) {
     if (user) {
       const parsedUser = JSON.parse(user);
       const id = (parsedUser as { id: string }).id;
-      setUserId(id); // Armazena o id do usuário no estado
+      setUserId(id);
     }
   }, []);
 
-  // Obtendo os dados do ranking
   useEffect(() => {
     async function getRanking() {
       try {
@@ -48,7 +48,6 @@ export default function Ranking({ level, type }: StartGameProps) {
     setIsDisabled(level === "" || type === "");
   }, [level, type]);
 
-  // Função para iniciar o jogo
   async function startGame(userID: string) {
     try {
       const res = await axios.post("http://localhost:5107/api/Games", {
@@ -60,12 +59,9 @@ export default function Ranking({ level, type }: StartGameProps) {
     }
   }
 
-  // Função chamada ao clicar no botão de "Começar"
   const handleClick = () => {
     if (userId) {
-      // Navega para a página do jogo
       router.push(`/game?level=${level}&type=${type}`);
-      // Chama a função para iniciar o jogo
       startGame(userId);
     }
   };
