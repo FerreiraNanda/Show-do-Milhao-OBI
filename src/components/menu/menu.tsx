@@ -7,8 +7,12 @@ import MenuItem from '@mui/material/MenuItem';
 import { IoIosArrowDown } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
 import { IoIosLogOut } from "react-icons/io";
+import { useAuth } from '@/hooks/useAuth';
+import { useRouter } from 'next/navigation';
 
 export default function ProfileMenu() {
+  const router = useRouter();
+  const {logOut} = useAuth();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -18,6 +22,12 @@ export default function ProfileMenu() {
     setAnchorEl(null);
   };
 
+  const handleLogOut = () =>{
+    logOut();
+    handleClose();
+    router.push('/login');
+  }
+
   return (
     <div>
       <Button
@@ -26,7 +36,7 @@ export default function ProfileMenu() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        sx={{textTransform:"none"}}
+        sx={{textTransform:"none", color: "inherit"}}
         className='text-white gap-2 hover:text-amber-300 transition duration-300'
       >
         <FaRegUser size={25}/><IoIosArrowDown size={25} /> 
@@ -46,8 +56,8 @@ export default function ProfileMenu() {
           horizontal: 'left',
         }}
       >
-        <MenuItem component="a" href='/' target='_blank' onClick={handleClose} className='gap-3 hover:text-[#2263A3] transition duration-300'>Perfil<FaRegUser/></MenuItem>
-        <MenuItem onClick={handleClose} className='gap-3 hover:text-[#2263A3] transition duration-300'>Logout <IoIosLogOut/></MenuItem>
+        <MenuItem component="a" href='/profile' onClick={handleClose} className='gap-3 hover:text-[#2263A3] transition duration-300'>Perfil<FaRegUser/></MenuItem>
+        <MenuItem onClick={handleLogOut} className='gap-3 hover:text-[#2263A3] transition duration-300'>Logout <IoIosLogOut/></MenuItem>
       </Menu>
     </div>
   );

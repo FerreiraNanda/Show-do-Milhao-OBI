@@ -10,6 +10,7 @@ export default {
     extend: {
       fontFamily:{
         jost: ['Jost', 'sans-serif'],
+        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
         background: "var(--background)",

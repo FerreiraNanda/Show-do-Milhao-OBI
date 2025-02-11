@@ -11,7 +11,7 @@ export default function Modalities({ setTypes }: { setTypes: (msg: string) => vo
   };
 
   return (
-    <div className="bg-gray-100 text-xl p-4 rounded-lg">
+    <div className="bg-white text-xl p-4 rounded-lg">
       <h1 className="text-[17px] mb-4 text-[#2263A3]">Modalidade Iniciação</h1>
       <div className="space-y-2">
         <label className="flex items-center gap-2 cursor-pointer">

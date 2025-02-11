@@ -24,8 +24,8 @@ export default function PositionedMenu() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        sx={{textTransform:"none"}}
-        className='text-white gap-2 hover:text-amber-300 text-lg transition duration-300'
+        sx={{textTransform:"none", color: "inherit"}}
+        className='text-white gap-2 hover:text-amber-300 text-[19px] transition duration-300'
       >
         Saiba Mais <IoIosArrowDown size={25}/> 
       </Button>
@@ -45,7 +45,7 @@ export default function PositionedMenu() {
         }}
       >
         <MenuItem component="a" href='https://olimpiada.ic.unicamp.br/' target='_blank' onClick={handleClose} className='hover:text-[#2263A3] transition duration-300'>Site Oficial da OBI</MenuItem>
-        <MenuItem onClick={handleClose} className='hover:text-[#2263A3] transition duration-300'>Projeto Preparação Para a OBI</MenuItem>
+        <MenuItem component="a" href='/about' onClick={handleClose} className='hover:text-[#2263A3] transition duration-300'>Projeto Preparação Para a OBI</MenuItem>
       </Menu>
     </div>
   );

@@ -12,7 +12,7 @@ export default function Level({ setQuestions }: { setQuestions: (msg: string) =>
         setQuestions(event.target.value);
     };
     return (
-        <div className="p-4 bg-gray-100 rounded-lg text-xl color-white">
+        <div className="p-4 bg-white rounded-lg text-xl color-white">
             <h1 className=" text-[#2263A3] mb-4 flex-col">Tipos de Questão</h1>
             <div className="space-y-2">
                 <label className="flex items-center gap-2">
