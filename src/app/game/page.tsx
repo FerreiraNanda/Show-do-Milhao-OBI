@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
@@ -19,7 +20,7 @@ interface User {
     amount: number;
     id: number,
     createdOn: string,
-  }
+}
 function Game() {
     const searchParams = useSearchParams();
     const level = searchParams.get("level") || "";
@@ -37,16 +38,18 @@ function Game() {
     const [currentStep, setCurrentStep] = useState<number>(0);
     const [budget, setBudget] = useState(0);
     const [endGame, setEndGame] = useState(false);
-    const [isMoHelp, setIsHelp] = useState(false);
+    const [isHelp, setIsHelp] = useState(false);
     const [user, setUser] = useState<User | null>(null);
+    const [hiddenOptions, setHiddenOptions] = useState<string[]>([]);
+
 
     const [usedStop, setUsedStop] = useState(false);
 
     const values = ["1000", "5000", "50000", "100000", "300000", "500000", "1000000"]
 
-    useEffect(()=>{
+    useEffect(() => {
         const storedUser = localStorage.getItem("user");
-        if(storedUser){
+        if (storedUser) {
             setUser(JSON.parse(storedUser));
         }
     }, [])
@@ -69,7 +72,7 @@ function Game() {
 
     useEffect(() => {
         if (currentStep >= 0) {
-            setBudget(parseInt(values[currentStep-1], 10));
+            setBudget(parseInt(values[currentStep - 1], 10));
         }
     }, [currentStep]);
 
@@ -78,21 +81,29 @@ function Game() {
         setIsModalOpen(true);
     };
 
-    const handleBudget = async () =>{
-        try{
+    const handleBudget = async () => {
+        try {
             await axios.post(`http://localhost:5107/api/Users/${user?.id}/${budget}`)
-        }catch(error){
+        } catch (error) {
             console.log(error);
         }
     }
- 
-    function end(){
+
+    function end() {
         handleBudget();
     }
 
-    function help(){
-        console.log("ajuda usada")
+    function help() {
+        const currentQuestion = questions[currentQuestionIndex];
+        const correctOption: string = currentQuestion.correctOption;
+        const incorrectOptions: string[] = currentQuestion.options.filter((opt: string) => opt !== correctOption);
+
+        if (incorrectOptions.length >= 3) {
+            const shuffledIncorrect = incorrectOptions.sort(() => Math.random() - 0.5).slice(0, 3);
+            setHiddenOptions(shuffledIncorrect);
+        }
     }
+
 
 
     const confirmAnswer = () => {
@@ -144,7 +155,7 @@ function Game() {
     return (
         <>
             <HeaderAux />
-            <Container>
+            <main className="max-w-[1024px] px-3 mx-auto flex h-full py-3 mb-6">
                 {loading ? (
                     <p>Carregando questões...</p>
                 ) : error ? (
@@ -152,42 +163,51 @@ function Game() {
                 ) : questions.length === 0 ? (
                     <p>Nenhuma questão encontrada.</p>
                 ) : (
-                    <div className="flex justify-between items-start gap-8 mt-8 mb-5 w-full h-ful">
-                        <div className="flex flex-col bg-white px-4 w-3/4 h-full rounded-lg">
-                            <h1 className="mt-3">{questions[currentQuestionIndex].statement}</h1>
-                            <div className="mt-4">
-                                {questions[currentQuestionIndex].options.map((answer: string, index: number) => (
-                                    <button
-                                        key={index}
-                                        className="font-jost justify-center text-xl border-2 border-black block w-11/12 py-3 px-4 mt-2 rounded-lg bg-white text-left hover:text-[#2263a3] hover:border-[#2263A3]"
-                                        onClick={() => selectAnswer(answer)}
-                                        disabled={selectedAnswer !== null}
-                                    >
-                                        <div className="flex gap-3 items-center">
-                                            <span className="w-10 h-10 flex items-center justify-center rounded-full bg-black text-white">
-                                                {String.fromCharCode(65 + index)}
-                                            </span>
-                                            {answer}
-                                        </div>
-
-                                    </button>
+                    <div className="flex justify-between items-start gap-8 mt-8 mb-5 w-full h-full">
+                        <div className="flex flex-col bg-white px-4 w-3/4 h-fit rounded-lg pb-6">
+                            <div className="mt-3 text-xl">
+                                {questions[currentQuestionIndex].statement.split("\n").map((line:string, index:number) => (
+                                    <p key={index} className="mb-4">{line}</p>
                                 ))}
+                            </div>
+
+
+
+                            <div className="mt-4">
+                                {questions.length > 0 && questions[currentQuestionIndex] &&
+                                    questions[currentQuestionIndex].options.map((answer: string, index: number) => (
+                                        <button
+                                            key={index}
+                                            className={`font-jost justify-center text-xl border-2 border-black block w-11/12 py-3 px-4 mt-2 rounded-lg bg-white text-left hover:text-[#2263a3] hover:border-[#2263A3] 
+                ${hiddenOptions.includes(answer) ? "text-red-600 border-red-600 pointer-events-none" : ""}`}
+                                            onClick={() => selectAnswer(answer)}
+                                            disabled={selectedAnswer !== null}
+                                        >
+                                            <div className="flex gap-3 items-center">
+                                                <span className={`${hiddenOptions.includes(answer) ? "w-10 h-10 flex items-center justify-center rounded-full bg-red-600 text-white" : "w-10 h-10 flex items-center justify-center rounded-full bg-black text-white"}`}>
+                                                    {String.fromCharCode(65 + index)}
+                                                </span>
+                                                {answer}
+                                            </div>
+                                        </button>
+                                    ))
+                                }
                             </div>
                         </div>
 
                         <section className="w-64 h-2/5">
                             <div className="mb-4 flex justify-between">
                                 <div>
-                                    <Help isHelp={() =>{
+                                    <Help isHelp={() => {
                                         setIsHelp(true);
                                         help();
-                                    }}/>
+                                    }} />
                                 </div>
                                 <div>
                                     <Stop endGame={() => {
                                         setEndGame(usedStop);
                                         end();
-                                    }}/>
+                                    }} />
                                 </div>
                             </div>
                             <div>
@@ -254,7 +274,7 @@ function Game() {
                     </div>
                 )}
 
-            </Container>
+            </main>
             <Footer />
         </>
     );

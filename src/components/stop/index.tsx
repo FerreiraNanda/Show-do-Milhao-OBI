@@ -35,7 +35,7 @@ export default function Stop({ endGame }: { endGame: (msg: boolean) => void }) {
                 className={`${isDisabled ? 'opacity-50 border-b-4 rounded-lg border-yellow-300' : 'border-b-4 border-yellow-300 rounded-xl box-content'}`}
             >
                 <div className='bg-white flex flex-col rounded-lg pt-2 pb-5 px-3 items-center'>
-                    <Image src={stop} alt='Parada' quality={100} className='scale-75 hover:scale-[0.89] transform transition-all duration-300' />
+                    <img src='stop.svg' alt='Parada' className='scale-75 hover:scale-[0.89] transform transition-all duration-300' />
                     <span className='font-jost font-bold text-xl text-[#2263a3]'>Parada</span>
                 </div>
             </button>
