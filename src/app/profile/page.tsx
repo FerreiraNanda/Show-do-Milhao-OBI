@@ -116,7 +116,7 @@ function Profile() {
                     </div>
                   </section>
 
-                  <div className="pt-8 w-full">
+                  <div className="pt-8 w-fit">
                     <h1 className="font-jost w-full border-b-[1px] border-black mb-4">
                       Endereço de Email: {user.email}
                     </h1>
@@ -129,18 +129,23 @@ function Profile() {
                         $ {user.amount}
                       </span>
                     </div>
-                    <section className="flex w-full justify-between mt-4 text-5xl">
-                      <div className="border-[1.5px] py-14 px-12 rounded-lg border-[#2263a3]">
+                    <section className="flex w-full justify-between mt-4 text-5xl gap-4">
+                      <div className="border-[1.5px] py-14 px-12 rounded-lg border-[#2263a3] flex flex-col items-center">
                         <span>12</span>
+                        <span className="text-lg">Partidas</span>
                       </div>
-                      <div className="border-[1.5px] py-14 px-12 rounded-lg border-[#2263a3]">
-                        <span>13</span>
+                      <div className="border-[1.5px] py-14 px-10 rounded-lg border-[#2263a3] flex flex-col items-center">
+                        <span>70</span>
+                        <span className="text-lg">Questões</span>
+                        <span className="text-lg">Respondidas</span>
                       </div>
-                      <div className="border-[1.5px] py-14 px-12 rounded-lg border-[#2263a3]">
-                        <span>14</span>
+                      <div className="border-[1.5px] py-14 px-12 rounded-lg border-[#2263a3] flex flex-col items-center">
+                        <span>0</span>
+                        <span className="text-lg">Paradas</span>
                       </div>
-                      <div className="border-[1.5px] py-14 px-12 rounded-lg border-[#2263a3]">
-                        <span>15</span>
+                      <div className="border-[1.5px] py-14 px-12 rounded-lg border-[#2263a3] flex flex-col items-center"> 
+                        <span>7</span>
+                        <span className="text-lg">Ajudas</span>
                       </div>
                     </section>
                   </div>

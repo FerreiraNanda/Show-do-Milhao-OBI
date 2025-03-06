@@ -26,6 +26,8 @@ function Game() {
     const level = searchParams.get("level") || "";
     const type = searchParams.get("type") || "";
 
+    const router = useRouter();
+
     const [questions, setQuestions] = useState<any[]>([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [loading, setLoading] = useState(true);
@@ -41,6 +43,7 @@ function Game() {
     const [isHelp, setIsHelp] = useState(false);
     const [user, setUser] = useState<User | null>(null);
     const [hiddenOptions, setHiddenOptions] = useState<string[]>([]);
+    const [modalStop, setModalStop] = useState(false);
 
 
     const [usedStop, setUsedStop] = useState(false);
@@ -148,14 +151,15 @@ function Game() {
         setCurrentStep(prevStep => prevStep + 1);
     }
 
-    const closeAnswerIncorrect = () => {
+    const closeAnswerIncorrect = async () => {
         setIsAnswerIncorrect(false);
-    }
+        router.push('/');
+    };
 
     return (
         <>
             <HeaderAux />
-            <main className="max-w-[1024px] px-3 mx-auto flex h-full py-3 mb-6">
+            <main className="max-w-[1024px] px-3 mx-auto justify-center flex h-full py-3 mb-6">
                 {loading ? (
                     <p>Carregando questões...</p>
                 ) : error ? (
@@ -163,10 +167,11 @@ function Game() {
                 ) : questions.length === 0 ? (
                     <p>Nenhuma questão encontrada.</p>
                 ) : (
-                    <div className="flex justify-between items-start gap-8 mt-8 mb-5 w-full h-full">
+                    <div className="flex gap-8 mt-8 mb-5 w-full h-full">
                         <div className="flex flex-col bg-white px-4 w-3/4 h-fit rounded-lg pb-6">
-                            <div className="mt-3 text-xl">
-                                {questions[currentQuestionIndex].statement.split("\n").map((line:string, index:number) => (
+                            <div className="justify-center flex w-full mt-5 text-3xl font-semibold"><span>{questions[currentQuestionIndex].title} </span></div>
+                            <div className="mt-3 text-xl text-justify   ">
+                                {questions[currentQuestionIndex].statement.split("\n").map((line: string, index: number) => (
                                     <p key={index} className="mb-4">{line}</p>
                                 ))}
                             </div>
@@ -260,16 +265,17 @@ function Game() {
                     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
                         <div className="bg-white p-6 rounded-lg w-80">
                             <h1 className="font-extrabold font-jost">Resposta Errada!</h1>
-                            <span className="text-sm">Prêmio: ${values[currentStep - 1]} </span>
+                            <span className="text-sm">Prêmio: ${currentStep > 0 ? values[currentStep - 1] : 0}</span>
                             <div className="flex justify-between">
-                                <div></div>
-                                <div className="right-0">
-                                    <button onClick={closeAnswerIncorrect} className="bg-[#2263a3] mt-3 text-sm px-3 py-2 text-white rounded-lg hover:text-yellow-300 transform transition-all duration-300">
+                                <div className="right-0 w-full flex justify-end">
+                                    <button
+                                        onClick={closeAnswerIncorrect}
+                                        className="bg-[#2263a3] mt-3 text-sm px-3 py-2 text-white rounded-lg hover:text-yellow-300 transform transition-all duration-300"
+                                    >
                                         Continuar
                                     </button>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 )}
