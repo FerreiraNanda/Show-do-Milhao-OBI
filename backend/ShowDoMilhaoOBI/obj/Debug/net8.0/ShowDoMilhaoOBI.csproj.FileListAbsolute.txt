@@ -1,0 +1,95 @@
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\appsettings.json
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.staticwebassets.endpoints.json
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.exe
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.deps.json
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.runtimeconfig.json
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.pdb
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.csproj.AssemblyReference.cache
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.AssemblyInfoInputs.cache
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.AssemblyInfo.cs
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.csproj.CoreCompileInputs.cache
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\scopedcss\bundle\ShowDoMilhaoOBI.styles.css
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets\msbuild.ShowDoMilhaoOBI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets\msbuild.ShowDoMilhaoOBI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets\msbuild.build.ShowDoMilhaoOBI.props
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ShowDoMilhaoOBI.props
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ShowDoMilhaoOBI.props
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMi.02133528.Up2Date
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\refint\ShowDoMilhaoOBI.dll
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.pdb
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.genruntimeconfig.cache
+C:\Users\gabri\source\repos\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ref\ShowDoMilhaoOBI.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\refint\ShowDoMilhaoOBI.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.pdb
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\appsettings.Development.json
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.staticwebassets.endpoints.json
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\appsettings.json
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.exe
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.deps.json
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.runtimeconfig.json
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\ShowDoMilhaoOBI.pdb
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\AutoMapper.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\MySqlConnector.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.csproj.AssemblyReference.cache
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.AssemblyInfoInputs.cache
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.AssemblyInfo.cs
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.csproj.CoreCompileInputs.cache
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.MvcApplicationPartsAssemblyInfo.cs
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.MvcApplicationPartsAssemblyInfo.cache
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\scopedcss\bundle\ShowDoMilhaoOBI.styles.css
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets.build.json
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets.development.json
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets\msbuild.ShowDoMilhaoOBI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets\msbuild.ShowDoMilhaoOBI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets\msbuild.build.ShowDoMilhaoOBI.props
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ShowDoMilhaoOBI.props
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ShowDoMilhaoOBI.props
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMi.02133528.Up2Date
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ShowDoMilhaoOBI.genruntimeconfig.cache
+C:\Dev\Projeto Integrador\ShowDoMilhaoOBI\ShowDoMilhaoOBI\obj\Debug\net8.0\ref\ShowDoMilhaoOBI.dll
