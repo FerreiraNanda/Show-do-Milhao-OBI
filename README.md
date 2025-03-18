@@ -2,14 +2,14 @@
 Projeto desenvolvido como parte do projeto de extensão para a preparação de alunos do ensino fundamental de Crateús para a OBI. A aplicação simula um jogo no estilo "Show do Milhão", ajudando os alunos a praticar conteúdos de forma interativa.
 
 🚀 Tecnologias Utilizadas
-Front-end: Next.js com Tailwind CSS
-Back-end: C# (.NET)
-Banco de Dados: MySQL
+- Front-end: Next.js com Tailwind CSS
+- Back-end: C# (.NET)
+- Banco de Dados: MySQL
 📂 Como Rodar o Projeto
 ✅ Pré-requisitos
-Node.js e npm/yarn
-.NET SDK
-MySQL
+- Node.js e npm/yarn
+- .NET SDK
+- MySQL
 
 💻 Rodando o Front-end
 1. Acesse a pasta do front-end:
